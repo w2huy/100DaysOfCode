@@ -1,0 +1,6 @@
+framework module Pods_100DaysOfCode {
+  umbrella header "Pods-100DaysOfCode-umbrella.h"
+
+  export *
+  module * { export * }
+}
