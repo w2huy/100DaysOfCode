@@ -10,62 +10,83 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="_00DaysOfCode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="_00DaysOfCode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="w2huy" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KDS-3w-zLN">
-                                <rect key="frame" x="16" y="244" width="382" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="w2huy" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KDS-3w-zLN">
+                                <rect key="frame" x="16" y="251.5" width="382" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="nJW-1g-yjn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HlU-by-uw1">
-                                <rect key="frame" x="16" y="215" width="79" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="16" y="223" width="80.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGf-wv-MbO">
-                                <rect key="frame" x="114" y="437" width="47" height="30"/>
-                                <state key="normal" title="Sign In"/>
-                                <connections>
-                                    <action selector="onSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zjG-IC-ptL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mda-04-PRX">
-                                <rect key="frame" x="268" y="437" width="54" height="30"/>
-                                <state key="normal" title="Sign Up"/>
-                                <connections>
-                                    <action selector="onSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YpY-2F-AdY"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 Days of Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-1k-frj">
-                                <rect key="frame" x="139" y="119" width="136" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="98" translatesAutoresizingMaskIntoConstraints="NO" id="gh4-Ra-Qr3">
+                                <rect key="frame" x="98.5" y="464" width="217" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGf-wv-MbO">
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zjG-IC-ptL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mda-04-PRX">
+                                        <rect key="frame" x="153" y="0.0" width="64" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YpY-2F-AdY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Mda-04-PRX" firstAttribute="leading" secondItem="yGf-wv-MbO" secondAttribute="trailing" constant="98" id="pVF-W5-1G6"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 DAYS OF CODE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-1k-frj">
+                                <rect key="frame" x="96.5" y="119" width="221" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="12345" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XjA-RT-ymT">
-                                <rect key="frame" x="16" y="339" width="382" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="12345" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XjA-RT-ymT">
+                                <rect key="frame" x="16" y="356" width="382" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="cpp-bd-iZO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsO-j1-VEc">
-                                <rect key="frame" x="16" y="310" width="74" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="16" y="327.5" width="76" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mda-04-PRX" secondAttribute="trailing" constant="92" id="1cE-Br-ymp"/>
+                            <constraint firstItem="gh4-Ra-Qr3" firstAttribute="top" secondItem="XjA-RT-ymT" secondAttribute="bottom" constant="64" id="4v4-hO-qYL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KDS-3w-zLN" secondAttribute="trailing" constant="16" id="AVW-wP-KST"/>
                             <constraint firstItem="lsO-j1-VEc" firstAttribute="top" secondItem="KDS-3w-zLN" secondAttribute="bottom" constant="32" id="Dmk-Dg-Ehf"/>
-                            <constraint firstItem="yGf-wv-MbO" firstAttribute="top" secondItem="XjA-RT-ymT" secondAttribute="bottom" constant="64" id="GPg-vR-RkI"/>
                             <constraint firstItem="KDS-3w-zLN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="HgU-H8-5yY"/>
-                            <constraint firstItem="Mda-04-PRX" firstAttribute="top" secondItem="yGf-wv-MbO" secondAttribute="top" id="RRs-fZ-p0c"/>
+                            <constraint firstItem="gh4-Ra-Qr3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qb4-Fv-iLI"/>
                             <constraint firstItem="XjA-RT-ymT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="c2P-zk-fom"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XjA-RT-ymT" secondAttribute="trailing" constant="16" id="jwe-1Z-Ws9"/>
                             <constraint firstItem="GJd-1k-frj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pBF-Or-fwK"/>
@@ -74,8 +95,6 @@
                             <constraint firstItem="GJd-1k-frj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="scC-DV-7Bh"/>
                             <constraint firstItem="lsO-j1-VEc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tg6-KT-Dwz"/>
                             <constraint firstItem="XjA-RT-ymT" firstAttribute="top" secondItem="lsO-j1-VEc" secondAttribute="bottom" constant="8" id="tuw-IN-t3D"/>
-                            <constraint firstItem="yGf-wv-MbO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="wDz-zn-4rG"/>
-                            <constraint firstItem="Mda-04-PRX" firstAttribute="leading" secondItem="yGf-wv-MbO" secondAttribute="trailing" constant="107" id="xhv-L1-rEj"/>
                             <constraint firstItem="KDS-3w-zLN" firstAttribute="top" secondItem="HlU-by-uw1" secondAttribute="bottom" constant="8" id="yBF-Lb-2YZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -178,7 +197,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="0oL-wZ-gOZ"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Feed" prompt="100 Days Of Code" id="sdO-zN-ezH">
+                    <navigationItem key="navigationItem" title="Feed" id="sdO-zN-ezH">
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="HUH-w4-yFr">
                             <connections>
                                 <segue destination="Jft-BT-fsa" kind="presentation" id="aI8-JP-PSB"/>
@@ -407,7 +426,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="B1s-GJ-8xa"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Profile" prompt="100 Days Of Code" id="e2x-2O-00Q"/>
+                    <navigationItem key="navigationItem" title="Profile" id="e2x-2O-00Q"/>
                     <connections>
                         <outlet property="tableView" destination="S8r-By-SyS" id="W49-O4-gbc"/>
                     </connections>
@@ -422,6 +441,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7hX-2Q-Cbh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e65-rg-Oqg">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

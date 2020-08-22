@@ -24,9 +24,8 @@ class FeedViewController: UIViewController {
         tableView.refreshControl = myRefreshControl
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         loadEntrys()
     }
     
@@ -57,7 +56,7 @@ class FeedViewController: UIViewController {
         }
         
     }
-
+    
 }
 
 extension FeedViewController: UITableViewDelegate {

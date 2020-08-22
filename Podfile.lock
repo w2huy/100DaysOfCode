@@ -7,10 +7,12 @@ PODS:
     - Parse/Core (= 1.17.3)
   - Parse/Core (1.17.3):
     - Bolts/Tasks (~> 1.9)
+  - SkeletonView (1.8.7)
 
 DEPENDENCIES:
   - AlamofireImage
   - Parse
+  - SkeletonView
 
 SPEC REPOS:
   trunk:
@@ -18,13 +20,15 @@ SPEC REPOS:
     - AlamofireImage
     - Bolts
     - Parse
+    - SkeletonView
 
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
   AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   Parse: c1ad2a04d2cab2b54b6fb7da05f741abf2cf57d1
+  SkeletonView: ba5370f41280b2f0a76918bb143c1294232bb4f4
 
-PODFILE CHECKSUM: 2e7533a932b67a0f8057769bbe28e8931ac73cc0
+PODFILE CHECKSUM: 5ea72fb968f58adfe50647a1c80f1d6e19b109e6
 
 COCOAPODS: 1.8.4

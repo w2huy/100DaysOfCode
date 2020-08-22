@@ -8,5 +8,6 @@ target '100DaysOfCode' do
   # Pods for 100DaysOfCode
   pod "Parse"
   pod "AlamofireImage"
+  pod "SkeletonView"
 
 end

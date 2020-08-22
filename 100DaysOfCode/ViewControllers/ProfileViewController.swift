@@ -26,6 +26,11 @@ class ProfileViewController: UIViewController {
         loadEntrys()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadEntrys()
+    }
+    
     @objc func loadEntrys() {
         let query = PFQuery(className: "Entrys")
         query.includeKey("author")
